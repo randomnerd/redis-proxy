@@ -1,0 +1,10 @@
+.cache
+node_modules/
+config/local*
+dist/
+*.log
+.vscode/
+.idea/
+.DS_Store
+public/docs
+config/routes-*.json

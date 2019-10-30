@@ -1,0 +1,7 @@
+FROM node:12-alpine as builder
+RUN apk add ca-certificates python build-base redis
+WORKDIR /home/node/app
+COPY package.json yarn.lock tsconfig.json jest.config.js ./
+RUN yarn install
+COPY ./src ./src
+ENTRYPOINT ["yarn", "test:localredis"]

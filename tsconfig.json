@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "importHelpers": true,
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "pretty": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "incremental": true,
+        "lib": ["es6", "dom"],
+        "types": ["node", "jest", "supertest"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2017",
+        "sourceMap": true,
+        "declaration": true
+    },
+    "include": ["src/**/*.ts", "src/**/*.json"],
+    "exclude": ["*.spec.*"]
+}
